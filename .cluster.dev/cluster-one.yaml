@@ -1,0 +1,15 @@
+cluster:
+  installed: true
+  name: minikube-five
+  cloud:
+    provider: aws
+    region: eu-central-1
+    vpc: default
+    domain: shalb.net  # You need a domain in Route53
+  provisioner:
+    type: minikube
+    instanceType: m5.large
+  apps:
+    - helm-all-in-app
+    - helm-dependency
+    - raw-manifest
