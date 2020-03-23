@@ -1,5 +1,5 @@
 cluster:
-  installed: false
+  installed: true
   name: minikube-nine
   cloud:
     provider: aws
