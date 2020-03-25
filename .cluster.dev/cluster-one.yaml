@@ -11,5 +11,4 @@ cluster:
     instanceType: m5.large
   apps:
     - helm-all-in-app
-    - helm-dependency
-    - raw-manifest
+    - logging
