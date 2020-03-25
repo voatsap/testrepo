@@ -1,4 +1,4 @@
-# Example on how to install public helm chart using public values
+# Example on how to install public helm chart using public value
 # with redefinition on some values inside application.yaml
 apiVersion: argoproj.io/v1alpha1
 kind: Application
