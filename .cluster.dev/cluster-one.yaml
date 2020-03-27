@@ -1,5 +1,5 @@
 cluster:
-  installed: false
+  installed: true
   name: minikube-nine
   cloud:
     provider: aws
@@ -10,5 +10,4 @@ cluster:
     type: minikube
     instanceType: m5.large
   apps:
-    - helm-all-in-app
-    - logging
+    - /kubernetes/apps/logging
