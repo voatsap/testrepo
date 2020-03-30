@@ -1,11 +1,11 @@
 cluster:
-  installed: false
+  installed: true
   name: minikube-nine
   cloud:
     provider: aws
     region: eu-central-1
     vpc: default
-    domain: cluster.dev
+    domain: aws.shalb.com
   provisioner:
     type: minikube
     instanceType: m5.large
