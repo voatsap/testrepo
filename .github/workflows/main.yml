@@ -3,7 +3,7 @@ on:
     paths:
       - '.github/workflows/**' # Trigger updates on Workflow changes
       - '.cluster.dev/**' # Path to cluster declaration manifests
-      - '/kubernetes/apps/**' # ArgoCD apps folders 
+      - '/kubernetes/apps/**' # ArgoCD application folders 
     branches:
       - master
 jobs:
