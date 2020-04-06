@@ -17,7 +17,7 @@ jobs:
     # - uses: ./ # Uses an action in the root directory
     - name: Reconcile Clusters
       id: reconcile
-      uses: shalb/cluster.dev@Cert-Manager-to-DNS01
+      uses: shalb/cluster.dev@GitHub-dependency-removement 
       #uses: shalb/cluster.dev@master
       with:
         cluster-config: './.cluster.dev/'
