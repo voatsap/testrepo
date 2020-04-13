@@ -20,8 +20,6 @@ jobs:
     - name: Reconcile Clusters
       id: reconcile
       uses: shalb/cluster.dev@feature/GH-56
-      with:
-        cluster-config: './.cluster.dev/'
     - name: Get the Cluster Credentials
       run: echo -e "\n\033[1;32m${{ steps.reconcile.outputs.ssh }}\n\033[1;32m${{ steps.reconcile.outputs.kubeconfig }}\n\033[1;32m${{ steps.reconcile.outputs.argocd }}"
 
