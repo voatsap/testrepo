@@ -7,17 +7,17 @@ on:
     branches:
       - master
 jobs:
-  deploy_cluster_job:
-    env:
-      VERBOSE_LVL: DEBUG
-      AWS_ACCESS_KEY_ID: ${{ secrets.aws_access_key_id }}
-      AWS_SECRET_ACCESS_KEY: ${{ secrets.aws_secret_access_key }}
+  cluster_dev_clusters:
     runs-on: ubuntu-latest
     name: Create and Update Kubernetes Clusters
     steps:
     - name: Checkout Repo
       uses: actions/checkout@v2
     - name: Reconcile Clusters
+      env:
+        VERBOSE_LVL: DEBUG
+        AWS_ACCESS_KEY_ID: ${{ secrets.aws_access_key_id }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.aws_secret_access_key }}
       id: reconcile
       uses: shalb/cluster.dev@feature/GH-56
     - name: Get the Cluster Credentials
