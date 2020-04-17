@@ -1,13 +1,13 @@
 cluster:
-  installed: false
+  installed: true
   name: minikube-nine
   cloud:
     provider: aws
     region: eu-central-1
     vpc: default
     domain: shalb.net
-  provisioner:
-    type: minikube
-    instanceType: m5.large
+    provisioner:
+      type: minikube
+      instanceType: m5.large
   apps:
     - /kubernetes/apps/logging

@@ -6,7 +6,7 @@ cluster:
     region: eu-central-1
     vpc: default
     domain: aws.shalb.com
-  provisioner:
-    type: minikube
-    instanceType: m5.large
+    provisioner:
+      type: minikube
+      instanceType: m5.large
   apps:
