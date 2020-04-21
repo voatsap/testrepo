@@ -9,7 +9,7 @@ on:
 jobs:
   cluster_dev_clusters:
     runs-on: ubuntu-latest
-    name: Create and Update Kubernetes Clusters
+    name: cluster.dev
     steps:
     - name: Checkout Repo
       uses: actions/checkout@v2
