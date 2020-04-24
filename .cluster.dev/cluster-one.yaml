@@ -1,6 +1,6 @@
 cluster:
-  installed: false
-  name: two
+  installed: true
+  name: three
   cloud:
     provider: aws
     region: eu-central-1
