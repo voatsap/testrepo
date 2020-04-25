@@ -5,7 +5,7 @@ cluster:
     provider: aws
     region: eu-central-1
     vpc: default
-    domain: cluster.dev
+    domain: shalb.net
     provisioner:
       type: minikube
       instanceType: m5.large
