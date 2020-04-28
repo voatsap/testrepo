@@ -1,11 +1,11 @@
 cluster:
-  installed: false
+  installed: true
   name: one
   cloud:
     provider: aws
     region: eu-central-1
     vpc: default
-    domain: shalb.net
+    domain: cluster.dev
     provisioner:
       type: minikube
       instanceType: m5.large
