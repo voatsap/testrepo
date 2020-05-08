@@ -3,9 +3,10 @@ cluster:
   name: one
   cloud:
     provider: aws
-    region: eu-central-1
-    availability_zones: eu-central-1a, eu-central-1b
-    vpc: default
+    region: eu-central-1  
+    availability_zones: eu-central-1b, eu-central-1c
+    vpc: create
+    vpc_cidr: 10.18.0.0/18
     domain: cluster.dev
     provisioner:
       type: minikube
