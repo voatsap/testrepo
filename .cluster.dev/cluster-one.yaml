@@ -1,6 +1,6 @@
 cluster:
   installed: true
-  name: one
+  name: hashicorp
   cloud:
     provider: aws
     region: eu-central-1
