@@ -3,7 +3,7 @@ cluster:
   name: one
   cloud:
     provider: aws
-    region: eu-central-1  
+    region: eu-central-1
     availability_zones: eu-central-1b, eu-central-1c
     vpc: create
     vpc_cidr: 10.18.0.0/18
