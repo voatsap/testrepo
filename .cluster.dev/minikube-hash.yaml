@@ -1,11 +1,11 @@
 cluster:
-  installed: false
-  name: minikube-eight
+  installed: true
+  name: hashcorp
   cloud:
     provider: aws
     region: eu-central-1
     vpc: default
-    domain: aws.shalb.com
+    domain: cluster.dev
     provisioner:
       type: minikube
       instanceType: m5.large
