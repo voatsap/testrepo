@@ -15,5 +15,5 @@ wordpress:
     }
     extraTls:
     - hosts:
-      - wp.hashicorp-voatsap.cluster.dev
-      secretName: wp.hashicorp-voatsap.cluster.dev
+      - wp.hashcorp-voatsap.cluster.dev
+      secretName: wp.hashcorp-voatsap.cluster.dev
