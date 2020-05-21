@@ -15,7 +15,6 @@ spec:
     targetRevision: HEAD
     path: kubernetes/charts/wordpress
     helm:
-      parameters:
       valueFiles:
       - values.yaml
   destination:
