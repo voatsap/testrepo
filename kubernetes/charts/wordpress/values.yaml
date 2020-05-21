@@ -8,7 +8,7 @@ wordpress:
   ingress:
     enabled: true
     certManager: true
-    hostname: wp.hash-voatsap.cluster.dev
+    hostname: wp.hashcorp-voatsap.cluster.dev
     annotations: {
       kubernetes.io/ingress.class: nginx,
       cert-manager.io/cluster-issuer: letsencrypt-prod
