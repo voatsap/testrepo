@@ -14,3 +14,4 @@ cluster:
   apps:
     - /kubernetes/apps/logging
     - /kubernetes/apps/wordpress
+    - /kubernetes/apps/wordpress
