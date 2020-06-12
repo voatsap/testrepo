@@ -1,17 +1,14 @@
 cluster:
-  installed: false
-  name: hashicorp
+  installed: true
+  name: olm
   cloud:
     provider: aws
     region: eu-central-1
     availability_zones: eu-central-1b, eu-central-1c
-    vpc: create
-    vpc_cidr: 10.18.0.0/18
+    vpc: default
     domain: cluster.dev
     provisioner:
       type: minikube
       instanceType: m5.large
   apps:
     - /kubernetes/apps/logging
-    - /kubernetes/apps/wordpress
-    - /kubernetes/apps/wordpress
