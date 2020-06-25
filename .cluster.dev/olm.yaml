@@ -1,5 +1,5 @@
 cluster:
-  installed: false
+  installed: true
   name: olm
   cloud:
     provider: aws
@@ -11,5 +11,4 @@ cluster:
       type: minikube
       instanceType: m5.large
   apps:
-    - /kubernetes/apps/logging
     - /kubernetes/apps/logging
