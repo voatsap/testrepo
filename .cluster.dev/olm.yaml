@@ -1,12 +1,12 @@
 cluster:
-  installed: false
+  installed: true
   name: olm
   cloud:
     provider: aws
     region: eu-central-1
     availability_zones: eu-central-1b, eu-central-1c
     vpc: default
-    domain: cluster.dev
+    domain: shalb.org
     provisioner:
       type: minikube
       instanceType: m5.large
