@@ -8,12 +8,12 @@ wordpress:
   ingress:
     enabled: true
     certManager: true
-    hostname: wp.hashcorp-voatsap.cluster.dev
+    hostname: wp.olm-voatsap.shalb.org
     annotations: {
       kubernetes.io/ingress.class: nginx,
       cert-manager.io/cluster-issuer: letsencrypt-prod
     }
     extraTls:
     - hosts:
-      - wp.hashcorp-voatsap.cluster.dev
-      secretName: wp.hashcorp-voatsap.cluster.dev
+      - wp.olm-voatsap.shalb.org
+      secretName: wp.olm-voatsap.shalb.org
