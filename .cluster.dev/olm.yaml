@@ -12,3 +12,4 @@ cluster:
       instanceType: m5.large
   apps:
     - /kubernetes/apps/logging
+    - /kubernetes/apps/wordpress
