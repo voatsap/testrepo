@@ -1,10 +1,10 @@
 cluster:
-  installed: false
+  installed: true
   name: olm
   cloud:
     provider: aws
     region: eu-central-1
-    availability_zones: eu-central-1b, eu-central-1c
+    availability_zones: eu-central-1b
     vpc: default
     domain: shalb.org
     provisioner:
@@ -12,4 +12,3 @@ cluster:
       instanceType: m5.large
   apps:
     - /kubernetes/apps/logging
-    - /kubernetes/apps/wordpress
