@@ -1,14 +1,20 @@
 cluster:
-  installed: false
-  name: hashcorp
+  installed: true
+  name: digitalocean
   cloud:
-    provider: aws
-    region: eu-central-1
+    provider: digitalocean
+    region: ams3
     vpc: default
-    domain: cluster.dev
+    vpc_cidr: 10.8.0.0/20
+    domain: do.shalb.org
     provisioner:
-      type: minikube
-      instanceType: m5.large
+      type: managed-kubernetes
+      version: 1.17
+      nodeSize: s-1vcpu-2gb
+      minNodes: 1
+      maxNodes: 2
+  addons:
+    nginx-ingress: true
+    cert-manager: true
   apps:
     - /kubernetes/apps/logging
-    - /kubernetes/apps/wordpress
