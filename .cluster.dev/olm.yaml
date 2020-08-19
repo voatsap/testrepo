@@ -3,8 +3,8 @@ cluster:
   name: olm
   cloud:
     provider: aws
-    region: eu-west-1
-    availability_zones: eu-west-1b
+    region: eu-central-1
+    availability_zones: eu-central-1b
     vpc: default
     domain: shalb.org
     provisioner:
