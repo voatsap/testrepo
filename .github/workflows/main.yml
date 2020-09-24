@@ -21,7 +21,7 @@ jobs:
         SPACES_ACCESS_KEY_ID: "${{ secrets.SPACES_ACCESS_KEY_ID }}"
         SPACES_SECRET_ACCESS_KEY: "${{ secrets.SPACES_SECRET_ACCESS_KEY }}"
         CLUSTER_CONFIG_PATH: "./.cluster.dev/"
-        VERBOSE_LVL: DEBUG
+        VERBOSE_LVL: INFO
       id: reconcile
       uses: shalb/cluster.dev@v0.3.0-beta-10
     - name: Get the Cluster Credentials
