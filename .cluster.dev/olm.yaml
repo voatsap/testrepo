@@ -1,14 +1,18 @@
-cluster:
-  installed: true
-  name: olm
-  cloud:
-    provider: aws
-    region: eu-central-1
-    availability_zones: eu-central-1b
-    vpc: default
-    domain: shalb.org
-    provisioner:
-      type: minikube
-      instanceType: m5.large
-  apps:
-    - /kubernetes/apps/logging
+installed: false
+name: olm
+provider:
+  type: aws
+  region: eu-central-1
+  availability_zones:
+    - eu-central-1b
+    - eu-central-1c
+  vpc: default
+  domain: shalb.org
+  provisioner:
+    type: minikube
+    instanceType: m5.large
+addons:
+  nginx-ingress: true
+  cert-manager: true
+apps:
+  - /kubernetes/apps/samples
