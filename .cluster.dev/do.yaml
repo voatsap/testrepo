@@ -1,4 +1,4 @@
-installed: false
+installed: true
 name: dev-k8s
 provider:
   type: digitalocean
