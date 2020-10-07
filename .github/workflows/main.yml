@@ -24,6 +24,4 @@ jobs:
         VERBOSE_LVL: INFO
       id: reconcile
       uses: shalb/cluster.dev@v0.3.1
-    - name: Get the Cluster Credentials
-      run: echo -e "\n\033[1;32m${{ steps.reconcile.outputs.ssh }}\n\033[1;32m${{ steps.reconcile.outputs.kubeconfig }}\n\033[1;32m${{ steps.reconcile.outputs.argocd }}"
 
