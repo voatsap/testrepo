@@ -1,4 +1,4 @@
-installed: false
+installed: true
 name: olm
 provider:
   type: aws
